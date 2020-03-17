@@ -30,7 +30,7 @@ def test_velocity_update():
         acceleration = Charticle.Lorentz(1.0e-10)
         Charticle.update(1.0e-10)
         calculated_velocity = np.array([0.5, -5.757108678e-2, 0.0])
-        assert np.allclose(Charticle.velocity, calculated_v, atol=1e-6)
+        assert np.allclose(Charticle.velocity, calculated_velocity, atol=1e-6)
     
 # def test_position_update():
 #     Charticle = Charged_Particle(position = np.array([0.0, 0.0, 0.0], dtype=float), velocity = np.array([0.5, 0.0, 0.0], dtype=float), acceleration = np.array([0.0, 0.0, 0.0], dtype=float), Name = 'Particle', mass = 1.67e-27, charge = 1.6e-19)
